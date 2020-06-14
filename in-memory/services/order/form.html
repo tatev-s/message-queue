@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h2>Submit Order</h2>
+
+  <form action="/order" method="POST">
+    <label for="itemName">Name:</label><br>
+    <input type="text" id="itemName" name="itemName" value="Test"><br>
+    <label for="itemPrice">Price:</label><br>
+    <input type="text" id="itemPrice" name="itemPrice" value="100"><br><br>
+    <label for="userEmail">Email:</label><br>
+    <input type="text" id="userEmail" name="userEmail" value="test@test.com"><br><br>
+    <label for="itemsQuantity">Quantity:</label><br>
+    <input type="text" id="itemsQuantity" name="itemsQuantity" value="5"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>If you click the "Submit" button, the form-data will be sent to a page called "/order" POST.</p>
+
+</body>
+
+</html>

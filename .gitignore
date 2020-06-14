@@ -1,0 +1,9 @@
+# Dependency directories
+node_modules/
+amazon-sqs/node_modules
+in-memory/node_modules
+
+.history/*
+# misc
+.DS_Store
+.idea

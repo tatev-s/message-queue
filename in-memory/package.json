@@ -1,0 +1,24 @@
+{
+  "name": "in-memory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "consumer": "nodemon server.js",
+    "server": "cd queue && node consumer.js",
+    "start": "concurrently --kill-others \"npm run consumer\" \"npm run server\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "rsmq": "^0.12.2",
+    "rsmq-promise": "^1.0.4",
+    "rsmq-worker": "^0.5.2"
+  }
+}
